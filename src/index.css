@@ -1,0 +1,94 @@
+/* Reset y configuraciones de raíz */
+
+  html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color:var(--bg-color);
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Modo oscuro */
+html.dark {
+  --bg-color: #0a0a0a;
+  --text-color: #f0f0f0;
+}
+
+/* Modo claro (por defecto) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+@media (max-width: 768px) {
+  /* Adaptar secciones principales */
+  #container-major,
+  .main-container,
+  .content-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  /* Navbar más compacta */
+  .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .buttons-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Avatar o título más pequeño si lo usas */
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* Íconos más chicos */
+  .icon-whatsapp,
+  .icon-gmail,
+  .icon-linkedin,
+  .icon-download {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  /* Espaciado interno */
+  .container-avatar,
+  .icons-container {
+    justify-content: center;
+  }
+}
+

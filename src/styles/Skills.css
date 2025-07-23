@@ -1,0 +1,39 @@
+#skills-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+#skills-title {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+#skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#skills-list li {
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  background-color: #8acfcf30;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+#skills-list li:hover {
+  transform: scale(1.05);
+  background-color: #17cbcbdb;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 300px; /* o el ancho que uses */
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; /* asegúrate de que esté por encima del contenido */
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* opcional */
+  box-sizing: border-box;
+  overflow: hidden; /* Permite hacer scroll si es necesario */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+ 
+}
+
+@keyframes fadeInLogo {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.icon-logo {
+  width: 50%;
+  height: 50%;
+  opacity: 0; /* inicia invisible */
+  animation: fadeInLogo 0.5s ease-out forwards;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon-logo {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.icon-logo.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.container-avatar{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avatar{
+    width: 50%;
+}
+
+.title{
+  color:var(--text-color);
+  font-family: "Oxanium", sans-serif;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.icons-container {
+  display: flex;
+  width: 100%;
+}
+
+.container-icon{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.icon-whatsapp{
+  width: 35%;
+}
+
+.icon-gmail{
+  width: 40%;
+}
+
+.icon-linkedin{
+  width: 35%;
+}
+
+.icon-download{
+  width: 35%;
+}
+
+.buttons-container{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+

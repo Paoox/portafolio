@@ -1,0 +1,9 @@
+#container-major {
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    background-color: var(--bg-color);
+  }

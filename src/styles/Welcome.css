@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+/* Contenedor principal para la página de bienvenida */
+.welcome-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:black;
+  color: #83C0C1;
+  overflow: hidden;
+}
+
+/* Contenedor para centrar el logo y el título */
+.logo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.blur-in {
+  height: 50%; 
+  width: 50%; 
+  animation: blur-in 2.0s linear both;
+}
+
+@keyframes blur-in {
+  0% { filter: blur(12px); opacity: 0; }
+  100% { filter: blur(0); opacity: 1; }
+}
+
+.fade-in {
+  visibility: hidden; /* Ocultar al principio */
+  font-family: "Oxanium", sans-serif;
+  font-size: 1rem;
+  animation: fade-in 1.5s ease-out 3s forwards;
+  margin-bottom: 1rem;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; visibility: visible; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .fade-in {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .blur-in {
+    width: 70vw;
+    max-width: 220px;
+  }
+}
