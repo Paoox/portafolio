@@ -30,6 +30,53 @@
   margin-top: 20px;
 }
 
+.subtitle-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+  padding: 0;
+}
+
+.subtitle-container h2,
+.subtitle-container h3 {
+  margin: 0;
+  line-height: 1.2; /* opcional: controla espacio vertical */
+}
+
+.subtitle-container h2 {
+  margin-bottom: 0.2rem;
+}
+
+.subtitle-container h3 {
+  margin-top: 0;
+}
+
+
+.container-download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.container-download p {
+  margin: 4px 0 0 0;
+  padding: 0;
+  font-size: 0.95rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+
+.icondownload {
+  width: 30%;
+  height: 30%;
+}
+
 #description li{
   list-style: none;
 }
@@ -38,15 +85,24 @@
   font-size: 1rem;
   color: var(--text-color);
   text-align: center;
-  margin: 20px;
+  margin: 2rem 0 0 0
+}
+
+#descripcion-me{
+  margin-top: 4px; /* ajusta según se vea mejor */
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
 }
 
 #subtitle-description{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   color: var(--text-color);
-  font-style: italic;
   text-align: center;
   padding: 0;
+  margin: 0;
+  line-height: 1.2;
 }
 
 #education {

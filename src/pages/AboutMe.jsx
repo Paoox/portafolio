@@ -2,6 +2,7 @@ import "../styles/AboutMe.css";
 import Skills from "../components/Skills";
 import NavBar from "../components/NavBar";
 import { useState } from "react";
+import Download from "../assets/download.svg";
 import Icon from "../assets/IconAboutMe.jpeg";
 import Selfie from "../assets/Paoox1.svg";
 import SliderTechIcons from "../components/SliderTechIcons";
@@ -22,9 +23,10 @@ function AboutMe() {
             id="icon"
             onClick={() => setMostrarReal((prev) => !prev)}
           />
-          <h2 id="subtitle">Paola Arreola </h2>
-          <p id="nickname">Paoox Dev</p>
-        </section>
+          <div className="subtitle-container">
+            <h2>Paola Arreola </h2>
+            <h3>Paoox Dev</h3>
+          </div>
 
         <section id="description">
           <li>Edad: 38 años</li>
@@ -33,10 +35,19 @@ function AboutMe() {
           <li>Localidad: Estado de México (Tecámac)</li>
         </section>
 
+        <a className="container-download" href="/PaooxDev.pdf">
+            <img
+              className="icondownload"
+              src={Download}
+              alt="Descargar-cv-pdf"
+            />
+            <p>Descargar mi cv</p>
+          </a>
+        </section>
+
         <section id="me">
           <p id="subtitle-description">Sobre mi:</p>
           <p id="description-me">
-            <br />
             Soy una apasionada del desarrollo web y de la programación.
             <br />
             Descubri hace unos 5 años atras que me gustaba el tema de la
