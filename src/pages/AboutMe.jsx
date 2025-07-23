@@ -5,6 +5,7 @@ import { useState } from "react";
 import Icon from "../assets/IconAboutMe.jpeg";
 import Selfie from "../assets/Paoox1.svg";
 import SliderTechIcons from "../components/SliderTechIcons";
+import CarruselCertificados from "../components/CarruselCertificados";
 
 function AboutMe() {
   const [mostrarReal, setMostrarReal] = useState(false);
@@ -59,41 +60,27 @@ function AboutMe() {
         </section>
 
         <section id="education">
-          <p id="subtitle-educacion">Educación:</p>
+          <h4 id="subtitle-educacion">Educación</h4>
           <ul id="education-list">
-            <li>
-              Diplomado de Desarrollo Web Frontend - 2023
-            </li>
-            <li>
-              Especialización en JavaScript & React - 2023
-            </li>
-            <li>
-              Certificación de metodologias Scrum - 2023
-            </li>
-            <li>
-              Diplomado en BD no relacionales(Mongo DB y Mongoose) - 2024
-            </li>
-            <li>
-              Diplomado de especialización en desarrollo Backend - 2024
-            </li>
-            <li>
-              Diplomado de especialización en POO - 2024
-            </li>
-            <li>
-              Especialización en Java & Spring Boot - 2024
-            </li>
-            <li>
-              Diplomado en BD relacionales, SQL y MySQL - 2025
-            </li>
+            <li>Diplomado de Desarrollo Web Frontend - 2023</li>
+            <li>Especialización en JavaScript & React - 2023</li>
+            <li>Certificación de metodologias Scrum - 2023</li>
+            <li>Diplomado en BD no relacionales(Mongo DB y Mongoose) - 2024</li>
+            <li>Diplomado de especialización en desarrollo Backend - 2024</li>
+            <li>Diplomado de especialización en POO - 2024</li>
+            <li>Especialización en Java & Spring Boot - 2024</li>
+            <li>Diplomado en BD relacionales, SQL y MySQL - 2025</li>
             <li>
               Certificación en Aws y OCI (Oracle Cloud Infrastructure) - 2025
             </li>
-            <li>
-              Diplomado en UI/UX - 2025
-            </li>
+            <li>Diplomado en UI/UX - 2025</li>
           </ul>
         </section>
-        
+
+        <section className="aboutme-section">
+          {/* ...última sección de educación */}
+          <CarruselCertificados />
+        </section>
       </main>
     </section>
   );
