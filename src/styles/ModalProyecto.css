@@ -26,7 +26,7 @@
   text-align: center;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
   transform: translateX(150px);
-  max-height: 90vh;
+  max-height: 100vh;
   overflow-y: auto;
 }
 
@@ -84,7 +84,7 @@
     padding: 1.2rem;
     transform: translateX(
       0
-    ); /* ✅ Quitamos el desplazamiento horizontal en móvil */
+    ); 
   }
 
   .modal-img {
