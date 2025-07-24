@@ -10,10 +10,20 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Exsemed from "../assets/exsemed.png";
 import Colabora from "../assets/colabora.png";
+import Encriptador from "../assets/encriptador.png";
 
 const proyectos = [
   {
     id: 1,
+    titulo: "Encriptador",
+    descripcion: "Encriptador de textos.",
+    imagen: "/assets/proyectos/todo-app.jpg",
+    tecnologias: ["React", "Spring Boot"],
+    repo: "https://github.com/...",
+    demo: "https://todo-app.vercel.app",
+  },
+  {
+    id: 2,
     titulo: "Exsemed",
     descripcion: (
       <>
@@ -74,7 +84,7 @@ const proyectos = [
     demo: "https://exsemed.mx/",
   },
   {
-    id: 2,
+    id: 3,
     titulo: "Colabora.mx",
     descripcion: (
     <>
@@ -136,13 +146,41 @@ const proyectos = [
     demo: "https://colabora.mx/",
   },
   {
-    id: 3,
+    id: 4,
     titulo: "Encriptador",
-    descripcion: "Encriptador de textos.",
-    imagen: "/assets/proyectos/todo-app.jpg",
-    tecnologias: ["React", "Spring Boot"],
-    repo: "https://github.com/...",
-    demo: "https://todo-app.vercel.app",
+    descripcion: (
+    <>
+      <p>
+        Herramienta web de encriptación y desencriptación de texto, construida como parte del Challenge 1 de Alura.
+        Permite conservar y transformar mensajes aplicando reglas específicas de sustitución de caracteres.
+      </p>
+      <p>
+        Desarrollé el frontend y la lógica de cifrado aplicando buenas prácticas de usabilidad,
+        validaciones y compatibilidad con diversas resoluciones.
+      </p>
+      <ul style={{ listStyle: "none" }}>
+        <li>📌 Sustitución de vocales por claves: “a” ⇢ “ai”, “e” ⇢ “enter”, etc.</li>
+        <li>Validaciones que permiten únicamente texto en minúscula sin acentos ni caracteres especiales.</li>
+        <li>Botón para copiar el resultado al portapapeles con feedback visual.</li>
+        <li>Interfaz amigable con área de entrada y salida claramente diferenciadas.</li>
+        <li>Pie de página con enlaces a redes sociales y semana de creación.</li>
+        <li>Convertido estáticamente con HTML, CSS y JavaScript sin frameworks.</li>
+        <li>Desplegado en Vercel con HTTPS automático y tiempo de respuesta rápida.</li>
+      </ul>
+    </>
+  ),
+    imagen: Encriptador,
+    tecnologias: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Validaciones DOM",
+    "Clipboard API",
+    "Responsive Design",
+    "Vercel Deployment",
+  ],
+    repo: "https://github.com/Paoox/Encriptador",
+    demo: "https://encriptador-tau.vercel.app/",
   },
   // Agrega más proyectos reales
 ];
