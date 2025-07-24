@@ -50,3 +50,15 @@
   opacity: 1;
 }
 
+@media (max-width: 480px) {
+  .punto {
+    width: 8px;
+    height: 8px;
+  }
+
+  .carrusel-indicadores {
+    gap: 6px;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
