@@ -137,7 +137,7 @@
     max-width: 95%;
     padding: 1rem; /* ✅ Este padding evita que el texto llegue a los bordes */
     box-sizing: border-box;
-    margin-right:1rem;
+    margin-right:2rem;
   }
 
   .card-proyecto h3 {
