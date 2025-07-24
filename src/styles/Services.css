@@ -1,9 +1,68 @@
-#container-major {
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    background-color: var(--bg-color);
-  }
+.services-wrapper {
+  padding: 2rem;
+  color: var(--text-color);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.services-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.services-description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.service-card {
+  background-color: rgba(131, 192, 193, 0.1);
+  border: 1px solid #8acfcf;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(131, 192, 193, 0.2);
+}
+
+.service-card h3 {
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+}
+
+.cta-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cta-section p{
+  padding-bottom: 1rem ;
+}
+.cta-button {
+  background-color: #83C0C1;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #5ca8aa;
+}
