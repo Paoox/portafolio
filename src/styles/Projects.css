@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 /* Título */
@@ -45,7 +44,6 @@
   cursor: pointer;
   text-align: center;
   transition: transform 0.2s ease;
-  
 }
 
 .card-proyecto:hover {
@@ -130,15 +128,18 @@
   }
 
   .modal-descripcion {
-    max-width: 90%;
-    padding: 0;
+    max-width: 100%;
+    padding: 0 0.5rem; /* ✅ Espacio lateral interno */
+    box-sizing: border-box;
   }
 
-  .card-proyecto{
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  .card-proyecto {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1rem; /* ✅ Este padding evita que el texto llegue a los bordes */
+    box-sizing: border-box;
+    margin-right:6rem;
   }
 
   .card-proyecto h3 {

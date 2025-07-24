@@ -25,9 +25,7 @@ const proyectos = [
           médicos, hospitales y distribuidores explorar una amplia gama de
           productos médicos especializados.
         </p>
-        <ul
-          style={{ textAlign: "left", fontSize: "14px" }}
-        >
+        <ul>
           <li>
             Sistema de navegación por categorías: ortopedia, neurología,
             maxilofacial, oncología, entre otras.
