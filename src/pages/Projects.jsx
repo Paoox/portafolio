@@ -8,10 +8,12 @@ import ModalProyecto from "../components/ModalProyecto";
 import "../styles/Projects.css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import Exsemed from "../assets/exsemed.png";
-import Colabora from "../assets/colabora.png";
+import Exsemed from "../assets/exsemed.jpg";
+import Colabora from "../assets/colabora.jpg";
 import Encriptador from "../assets/encriptador.png";
 import Blah from "../assets/blah.png";
+import { useEffect } from 'react';
+
 
 const proyectos = [
   {
@@ -277,6 +279,32 @@ const proyectos = [
 
 function Projects() {
   const [proyectoActivo, setProyectoActivo] = useState(null);
+  useEffect(() => {
+  const tooltip = document.getElementById('tooltip');
+  const cards = document.querySelectorAll('.card-proyecto');
+
+  const showTooltip = (e) => {
+    tooltip.style.top = `${e.clientY + 12}px`;
+    tooltip.style.left = `${e.clientX + 12}px`;
+    tooltip.style.opacity = '1';
+  };
+
+  const hideTooltip = () => {
+    tooltip.style.opacity = '0';
+  };
+
+  cards.forEach((card) => {
+    card.addEventListener('mousemove', showTooltip);
+    card.addEventListener('mouseleave', hideTooltip);
+  });
+
+  return () => {
+    cards.forEach((card) => {
+      card.removeEventListener('mousemove', showTooltip);
+      card.removeEventListener('mouseleave', hideTooltip);
+    });
+  };
+}, []);
 
   return (
     <section id="container-major">
@@ -313,6 +341,8 @@ function Projects() {
               </SwiperSlide>
             ))}
           </Swiper>
+
+          <div id="tooltip" className="tooltip-hover">Conoce más →</div>
 
           {proyectoActivo && (
             <ModalProyecto
