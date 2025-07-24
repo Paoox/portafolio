@@ -144,16 +144,16 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
 
   .swiper-button-prev {
-    left: -5px; /* antes: 8px */
+    left: -10px; /* antes: 8px */
   }
 
   .swiper-button-next {
-    right: -5px; /* antes: 8px */
+    right: -10px; /* antes: 8px */
   }
 }
 
