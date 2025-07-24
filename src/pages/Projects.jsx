@@ -30,7 +30,7 @@ const proyectos = [
   },
   {
     id: 3,
-    titulo: "Encrptador",
+    titulo: "Encriptador",
     descripcion: "Encriptador de textos.",
     imagen: "/assets/proyectos/todo-app.jpg",
     tecnologias: ["React", "Spring Boot"],

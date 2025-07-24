@@ -9,8 +9,6 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  margin: 0 0 0 8rem;
-
   /* 👉 Centrado absoluto y bloqueo de scroll */
   overflow: hidden;
 }
@@ -25,7 +23,7 @@
   position: relative;
   text-align: center;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-  transform: translateY(0);
+  transform: translateX(150px);
 }
 
 .modal-img {
@@ -66,3 +64,31 @@
   text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .modal-contenido {
+    width: 90%;
+    padding: 1.2rem;
+    transform: translateX(0); /* ✅ Quitamos el desplazamiento horizontal en móvil */
+  }
+
+  .modal-img {
+    max-height: 180px;
+    object-fit: contain;
+  }
+
+  .btn-cerrar {
+    top: 5px;
+    right: 10px;
+    font-size: 1.2rem;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 3px 6px;
+  }
+
+  .modal-links a {
+    font-size: 0.9rem;
+    margin: 6px;
+  }
+}
