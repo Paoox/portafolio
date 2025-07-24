@@ -8,7 +8,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 4rem; /* ⚠️ Solo aplica en desktop */
+  /* ⚠️ Este margin-left solo en desktop */
+  margin-left: 4rem;
 }
 
 /* Título */
@@ -74,7 +75,6 @@
   font-size: 1rem !important;
   width: 30px;
   height: 30px;
-  z-index: 10; /* ✅ para evitar que se monten sobre contenido */
 }
 
 .swiper-button-prev::after,
@@ -82,12 +82,10 @@
   font-size: 1.5rem !important;
 }
 
-/* 🔽 MEDIA QUERIES */
 
-/* Tablet y mobile */
 @media (max-width: 768px) {
   .proyectos-container {
-    margin-left: 0;
+    margin-left: 0; /* ✅ Elimina el empuje lateral */
     padding: 1rem;
     align-items: center;
   }
@@ -102,11 +100,11 @@
 
   .swiper-slide {
     justify-content: center !important;
-    padding: 0 1rem;
+    padding: 0 1rem; /* para evitar que quede muy pegado a los lados */
   }
 
   .swiper {
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; /* espacio extra por si los botones quedan debajo */
   }
 
   .card-proyecto {
@@ -116,31 +114,28 @@
   }
 
   .swiper-button-prev,
-  .swiper-button-next {
-    top: 50%;
-    transform: translateY(-50%);
-  }
+.swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* Mobile reducido */
+}
+
 @media (max-width: 480px) {
   .titulo-proyectos {
     font-size: 1.2rem;
   }
 
-  .card-proyecto h3 {
-    font-size: 1rem; /* ✅ Reducimos h3 */
-  }
-
   .card-proyecto p {
-    font-size: 0.85rem; /* ✅ Reducimos p */
+    font-size: 0.85rem;
   }
 
   .swiper-button-prev {
-    left: 12px; /* ✅ Más separados del texto */
+    left: 5px;
   }
 
   .swiper-button-next {
-    right: 12px;
+    right: 5px;
   }
 }
+
