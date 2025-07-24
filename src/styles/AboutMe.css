@@ -1,5 +1,8 @@
 /* Configuración inicial para ocupar toda la pantalla */
 
+#title {
+  text-align: center;
+}
 #icon-container {
   display: flex;
   flex-direction: column;
