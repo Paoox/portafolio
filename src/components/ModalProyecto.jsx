@@ -24,9 +24,22 @@ export default function ModalProyecto({ proyecto, onClose }) {
           ))}
         </div>
         <div className="modal-links">
-          {proyecto.repo && (
-            <a href={proyecto.repo} target="_blank" rel="noopener noreferrer">
-              🔗 GitHub
+          {proyecto.repo?.frontend && (
+            <a
+              href={proyecto.repo.frontend}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              💻 Frontend
+            </a>
+          )}
+          {proyecto.repo?.backend && (
+            <a
+              href={proyecto.repo.backend}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🛠️ Backend
             </a>
           )}
           {proyecto.demo && (
