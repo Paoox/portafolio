@@ -114,7 +114,7 @@
 @media (max-width: 768px) {
   .proyectos-container {
     margin-left: 0;
-    padding: 1rem;
+    padding-left: 3rem;
     align-items: center;
   }
 
