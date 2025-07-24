@@ -31,7 +31,9 @@
 }
 
 .modal-img {
-  width: 100%;
+  width: 30%;
+  max-height: 180px; /* ✅ Controla el alto */
+  object-fit: contain;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -94,6 +96,16 @@
     top: 5px;
     right: 10px;
     font-size: 1.2rem;
+  }
+
+  .modal-contenido h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .modal-contenido p {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 
   .badge {
