@@ -68,7 +68,7 @@
   .modal-contenido {
     width: 90%;
     padding: 1.2rem;
-    transform: translateY(100); /* ✅ Quitamos el desplazamiento horizontal en móvil */
+    transform: translateX(100); /* ✅ Quitamos el desplazamiento horizontal en móvil */
   }
 
   .modal-img {
