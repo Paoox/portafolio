@@ -14,6 +14,8 @@
 }
 
 .modal-contenido {
+  white-space: pre-wrap;
+  text-align: left;
   background-color: var(--bg-color);
   color: var(--text-color);
   padding: 2rem;
@@ -24,6 +26,8 @@
   text-align: center;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
   transform: translateX(150px);
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .modal-img {
@@ -39,22 +43,30 @@
   font-size: 1.5rem;
   background: none;
   border: none;
-  color: #83C0C1;
+  color: #83c0c1;
   cursor: pointer;
 }
 
 .modal-tecnologias {
   margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
 }
 
 .badge {
   display: inline-block;
-  background-color: #83C0C1;
+  background-color: #83c0c1;
   color: white;
   padding: 4px 8px;
   margin: 4px;
   border-radius: 5px;
   font-size: 0.85rem;
+}
+
+.modal-links {
+  margin-top: 1rem;
 }
 
 .modal-links a {
@@ -68,7 +80,9 @@
   .modal-contenido {
     width: 90%;
     padding: 1.2rem;
-    transform: translateX(0); /* ✅ Quitamos el desplazamiento horizontal en móvil */
+    transform: translateX(
+      0
+    ); /* ✅ Quitamos el desplazamiento horizontal en móvil */
   }
 
   .modal-img {

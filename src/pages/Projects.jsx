@@ -8,16 +8,71 @@ import ModalProyecto from "../components/ModalProyecto";
 import "../styles/Projects.css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import Exsemed from "../assets/exsemed.png";
 
 const proyectos = [
   {
     id: 1,
-    titulo: "Red Social",
-    descripcion: "Una red social hecha con React, Spring Boot y PostgreSQL.",
-    imagen: "/assets/proyectos/red-social.jpg",
-    tecnologias: ["React", "Spring Boot", "PostgreSQL"],
-    repo: "https://github.com/...",
-    demo: "https://red-social.fly.dev",
+    titulo: "Exsemed",
+    descripcion: (
+      <>
+        <p>
+          Desarrollo completo del sitio web oficial de Exsemed, una empresa con
+          más de 30 años especializada en soluciones médicas de alta tecnología.
+        </p>
+        <p>
+          El sitio incluye una interfaz limpia y profesional que permite a
+          médicos, hospitales y distribuidores explorar una amplia gama de
+          productos médicos especializados.
+        </p>
+        <ul
+          style={{ textAlign: "left", paddingLeft: "1.2rem", margin: "1rem 0" }}
+        >
+          <li>
+            Sistema de navegación por categorías: ortopedia, neurología,
+            maxilofacial, oncología, entre otras.
+          </li>
+          <li>Catálogo visual con fichas técnicas y detalles por producto.</li>
+          <li>
+            Página institucional “Sobre Nosotros” con misión, visión y valores
+            de la empresa.
+          </li>
+          <li>
+            Página de contacto con mapa embebido, formulario y enlaces a
+            sucursales.
+          </li>
+          <li>
+            Integración de íconos con FontAwesome y animaciones suaves con AOS
+            (Animate on Scroll).
+          </li>
+          <li>Diseño responsive para escritorio, tablet y móvil.</li>
+          <li>
+            Optimización SEO on-page (títulos, descripciones, estructura
+            semántica).
+          </li>
+          <li>
+            Implementación modular con HTML5, CSS3, JavaScript Vanilla y
+            Bootstrap para grillas y navbar.
+          </li>
+          <li>Uso de Swiper.js para carruseles de marcas o distribuidores.</li>
+          <li>Hosting en servidor personalizado con dominio propio.</li>
+        </ul>
+      </>
+    ),
+    imagen: Exsemed,
+    tecnologias: [
+      "HTML5",
+      "CSS3",
+      "JavaScript Vanilla",
+      "Bootstrap 5",
+      "Swiper.js",
+      "FontAwesome",
+      "AOS (Animate on Scroll)",
+      "Responsive Design",
+      "SEO básico",
+      "Formulario de contacto embebido",
+    ],
+    demo: "https://exsemed.mx/",
   },
   {
     id: 2,
@@ -70,7 +125,10 @@ function Projects() {
                     className="imagen-proyecto"
                   />
                   <h3>{proyecto.titulo}</h3>
-                  <p>{proyecto.descripcion}</p>
+
+                  <div className="modal-descripcion">
+                    {proyecto.descripcion}
+                  </div>
                 </div>
               </SwiperSlide>
             ))}
