@@ -74,7 +74,7 @@
 /* Estilo de botones swiper */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #83C0C1 !important;
+  color: #83c0c1 !important;
   font-size: 1rem !important;
   width: 32px;
   height: 32px;
@@ -91,7 +91,7 @@
 /* Badge de tecnología */
 .badge {
   display: inline-block;
-  background-color: #83C0C1;
+  background-color: #83c0c1;
   color: #000;
   border-radius: 8px;
   padding: 0.3rem 0.6rem;
@@ -128,6 +128,12 @@
     margin-bottom: 1rem;
   }
 
+  .card-proyecto .modal-descripcion {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
   .card-proyecto h3 {
     font-size: 1.1rem;
   }
@@ -136,12 +142,18 @@
     font-size: 0.9rem;
   }
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 25px;
+    height: 25px;
+  }
+
   .swiper-button-prev {
-    left: 10px;
+    left: -5px; /* antes: 8px */
   }
 
   .swiper-button-next {
-    right: 10px;
+    right: -5px; /* antes: 8px */
   }
 }
 
@@ -162,14 +174,6 @@
   .swiper-button-next {
     width: 24px;
     height: 24px;
-  }
-
-  .swiper-button-prev {
-    left: 8px;
-  }
-
-  .swiper-button-next {
-    right: 8px;
   }
 
   .card-links {
