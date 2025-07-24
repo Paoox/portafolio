@@ -94,13 +94,23 @@
     font-size: 1.5rem;
   }
 
-  .card-proyecto {
-    width: 95%;
-    padding: 1rem;
-  }
-
   .imagen-proyecto {
     height: 160px;
+  }
+
+  .swiper-slide {
+    justify-content: center !important;
+    padding: 0 1rem; /* para evitar que quede muy pegado a los lados */
+  }
+
+  .swiper {
+    padding-bottom: 2rem; /* espacio extra por si los botones quedan debajo */
+  }
+
+  .card-proyecto {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
   }
 
   .swiper-button-prev,
@@ -109,3 +119,20 @@
     transform: translateY(-50%);
   }
 }
+
+@media (max-width: 480px) {
+  .titulo-proyectos {
+    font-size: 1.2rem;
+  }
+
+  .card-proyecto p {
+    font-size: 0.85rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 25px;
+    height: 25px;
+  }
+}
+
