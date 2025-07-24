@@ -26,7 +26,7 @@ const proyectos = [
           productos médicos especializados.
         </p>
         <ul cla
-          style={{ textAlign: "left", paddingLeft:"1rem", margin: "1rem 0", fontSize: "14px" }}
+          style={{ textAlign: "left", paddingLeft:"2rem", margin: "1rem 0", fontSize: "14px" }}
         >
           <li>
             Sistema de navegación por categorías: ortopedia, neurología,
