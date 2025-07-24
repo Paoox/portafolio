@@ -28,23 +28,42 @@
 
 /* Estilos generales */
 #container-major {
-  height: auto;
-  width: auto;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   display: flex;
-  background-color: var(--bg-color);
-  align-items: flex-end;
+  flex-direction: row; /* por defecto en desktop */
+  height: 100vh; /* usar vh solo aquí, no en hijos */
+  width: 100%;
+  overflow: hidden;
 }
 
-/* Contenedor principal */
+/* Contenido principal */
 #main-container {
-  width: calc(100% - 250px); /* si la navbar mide 250px */
-  height: auto;
-  margin-top: 2rem;
-  margin-left: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* MEDIA QUERY para móviles */
+@media (max-width: 768px) {
+  #container-major {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-container {
+    width: 100%;
+    height: auto;
+  }
+
+  #main-container {
+    padding: 1rem;
+    height: auto;
+  }
+
+  @media (min-width: 1024px) and (orientation: landscape) {
+    .nav-container {
+      height: auto;
+    }
+  }
 }

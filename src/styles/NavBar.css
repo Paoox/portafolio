@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
 .nav-container {
-  position: fixed;
-  top: 0;
-  width: 300px; /* o el ancho que uses */
-  background-color: var(--bg-color);
-  display: flex;
-  flex-direction: column;
-  z-index: 1000; /* asegúrate de que esté por encima del contenido */
-  padding: 0.5rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* opcional */
+  width: 250px; /* ancho fijo solo en desktop */
+  height: 100vh;
+  overflow-y: hidden;
+  padding: 1rem;
   box-sizing: border-box;
-  overflow: hidden; /* Permite hacer scroll si es necesario */
-  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background-color: var(--bg-color);
 }
 
 .container-logo {

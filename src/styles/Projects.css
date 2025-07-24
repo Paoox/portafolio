@@ -1,9 +1,98 @@
-#container-major {
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    background-color: var(--bg-color);
+/* Contenedor principal centrado */
+.proyectos-container {
+  width: 100%;
+  max-width: 900px; /* Cambiado de 1200px para mejor enfoque */
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 4rem ;
+}
+
+/* Título */
+.titulo-proyectos {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* Swiper contenedor */
+.swiper {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Centrado de la slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card de proyecto */
+.card-proyecto {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card-proyecto:hover {
+  transform: translateY(-5px);
+}
+
+.card-proyecto h3 {
+  margin: 0.5rem 0 0.3rem 0;
+}
+
+.card-proyecto p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Imagen del proyecto */
+.imagen-proyecto {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Estilo de botones swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #83C0C1 !important;
+  font-size: 1rem !important;
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.5rem !important;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .proyectos-container {
+    padding: 1rem;
   }
+
+  .card-proyecto {
+    width: 95%;
+  }
+
+  .imagen-proyecto {
+    height: 160px;
+  }
+}

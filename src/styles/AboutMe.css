@@ -125,3 +125,54 @@
   margin: 0;
 }
 
+/* 📱 Responsive para AboutMe */
+@media (max-width: 768px) {
+  #icon {
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
+  }
+
+  #description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .subtitle-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .subtitle-container h3 {
+    font-size: 1rem;
+  }
+
+  .container-download {
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  .icondownload {
+    width: 50%;
+    height: auto;
+  }
+
+  #me,
+  #descripcion-me,
+  #subtitle-description,
+  #education,
+  #subtitle-educacion {
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+
+  #subtitle-description,
+  #subtitle-educacion {
+    font-size: 1.3rem;
+  }
+
+  #education-list {
+    padding: 0 1rem;
+  }
+}
+
