@@ -136,10 +136,9 @@
   .card-proyecto {
     width: 100%;
     max-width: 95%;
-    margin: 0 auto;
     padding: 1rem; /* ✅ Este padding evita que el texto llegue a los bordes */
     box-sizing: border-box;
-    margin-right:4rem;
+    margin-right:5rem;
   }
 
   .card-proyecto h3 {
