@@ -139,7 +139,7 @@
     margin: 0 auto;
     padding: 1rem; /* ✅ Este padding evita que el texto llegue a los bordes */
     box-sizing: border-box;
-    margin-right:6rem;
+    margin-right:4rem;
   }
 
   .card-proyecto h3 {
