@@ -9,6 +9,7 @@ import "../styles/Projects.css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Exsemed from "../assets/exsemed.png";
+import Colabora from "../assets/colabora.png";
 
 const proyectos = [
   {
@@ -74,12 +75,65 @@ const proyectos = [
   },
   {
     id: 2,
-    titulo: "Todo App",
-    descripcion: "App para tareas con frontend y backend desacoplados.",
-    imagen: "/assets/proyectos/todo-app.jpg",
-    tecnologias: ["React", "Spring Boot"],
-    repo: "https://github.com/...",
-    demo: "https://todo-app.vercel.app",
+    titulo: "Colabora.mx",
+    descripcion: (
+    <>
+      <p>
+        Participación en el desarrollo frontend del sitio oficial de Colabora,
+        una plataforma enfocada en promover la colaboración ciudadana para
+        proyectos sociales, educativos y comunitarios en México.
+      </p>
+      <p>
+        El sitio ofrece herramientas para registrar, difundir y apoyar
+        iniciativas ciudadanas desde una interfaz accesible, intuitiva y
+        adaptable a distintos dispositivos.
+      </p>
+      <ul style={{ listStyle: "none" }}>
+        <li>
+          Desarrollo de interfaces limpias y responsivas con foco en UX/UI.
+        </li>
+        <li>
+          Implementación de componentes reutilizables en React para mayor
+          mantenibilidad.
+        </li>
+        <li>
+          Consumo de APIs RESTful para mostrar dinámicamente el contenido del
+          portal.
+        </li>
+        <li>
+          Colaboración en equipo multidisciplinario usando metodología ágil
+          (Scrum).
+        </li>
+        <li>
+          Aplicación de buenas prácticas de accesibilidad web y semántica HTML.
+        </li>
+        <li>
+          Uso de Tailwind CSS y CSS modular para estilizar componentes.
+        </li>
+        <li>
+          Adaptación visual a múltiples resoluciones (desktop, tablet, móvil).
+        </li>
+        <li>
+          Participación en pruebas funcionales cruzadas para asegurar
+          compatibilidad en navegadores.
+        </li>
+      </ul>
+    </>
+  ),
+    imagen: Colabora,
+    tecnologias: [
+    "React",
+    "Tailwind CSS",
+    "JavaScript",
+    "HTML5",
+    "APIs REST",
+    "Responsive Design",
+    "Scrum",
+    "CSS Modules",
+    "UX/UI",
+    "Accesibilidad Web",
+  ],
+    demo: "https://colabora.mx/",
   },
   {
     id: 3,
