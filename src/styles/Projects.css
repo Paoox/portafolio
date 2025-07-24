@@ -149,11 +149,11 @@
   }
 
   .swiper-button-prev {
-    left: -10px; /* antes: 8px */
+    left: -5px; /* antes: 8px */
   }
 
   .swiper-button-next {
-    right: -10px; /* antes: 8px */
+    right: -5px; /* antes: 8px */
   }
 }
 
