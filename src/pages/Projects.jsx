@@ -25,8 +25,8 @@ const proyectos = [
           médicos, hospitales y distribuidores explorar una amplia gama de
           productos médicos especializados.
         </p>
-        <ul
-          style={{ textAlign: "left", paddingLeft: "1rem", margin: "1rem 0" }}
+        <ul cla
+          style={{ textAlign: "left", paddingLeft: "1rem", margin: "1rem 0", fontSize: "14px" }}
         >
           <li>
             Sistema de navegación por categorías: ortopedia, neurología,
