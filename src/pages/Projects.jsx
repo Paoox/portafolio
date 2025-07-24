@@ -12,80 +12,115 @@ import Exsemed from "../assets/exsemed.jpg";
 import Colabora from "../assets/colabora.jpg";
 import Encriptador from "../assets/encriptador.png";
 import Blah from "../assets/blah.png";
-import { useEffect } from 'react';
-
+import { useEffect } from "react";
 
 const proyectos = [
   {
     id: 1,
     titulo: "Red Social Blah (Fullstack)",
     descripcion: (
-    <>
-      <p>
-        Aplicación web fullstack para gestión de tareas con enfoque profesional en arquitectura desacoplada, seguridad, escalabilidad y despliegue moderno. Desarrollada como parte de un portafolio técnico para demostrar habilidades completas en desarrollo backend, frontend y DevOps.
-      </p>
-      <p>
-        El backend fue construido con Java 17 y Spring Boot 3.5, exponiendo una API REST segura con control total de usuarios y tareas. El frontend fue desarrollado en React con Vite, brindando una experiencia limpia, responsive y moderna. Ambos componentes se comunican mediante peticiones HTTP autenticadas con JWT.
-      </p>
-      <p>Para probar la interfaz puedes crear un usuario nuevo o usar uno generico user:p@gmail.com password: P123456</p>
-      <ul style={{ listStyle: "none" }}>
-        <li>
-          🔐 Sistema de autenticación robusto con JSON Web Tokens (JWT) que protege todas las rutas sensibles y controla el acceso a nivel de usuario.
-        </li>
-        <li>🔁 Funcionalidad de recuperación de contraseña y actualización de datos personales.</li>
-        <li>
-          🔒 Encriptación segura de contraseñas usando BCrypt antes de almacenarlas en la base de datos PostgreSQL.
-        </li>
-        <li>
-          🔄 Operaciones CRUD completas para usuarios y tareas: registrar, iniciar sesión, crear, listar, actualizar y eliminar tareas personales.
-        </li>
-        <li>
-          🧩 Arquitectura desacoplada: frontend y backend separados en distintos repositorios y desplegados de forma independiente.
-        </li>
-        <li>
-          🖥️ Interfaz de usuario moderna hecha con React, utilizando `useState`, `useEffect` y `fetch` para interacción dinámica con el backend.
-        </li>
-         <li>📱 Diseño responsive con Material UI adaptado a dispositivos móviles.</li>
-        <li>
-          🐘 Persistencia de datos con PostgreSQL, con configuración de conexión desde Spring Boot mediante archivo `application.properties`.
-        </li>
-        <li>
-          🐳 Contenerización profesional usando Docker para backend y base de datos, incluyendo archivos `Dockerfile` y `docker-compose.yml`.
-        </li>
-        <li>
-          ☁️ Despliegue de backend en Fly.io usando imagen multistage optimizada con Maven y Java, y frontend en Vercel mediante GitHub integration.
-        </li>
-        <li>
-          🔁 Flujo de autenticación gestionado en frontend con manejo de tokens JWT, almacenamiento en `localStorage` y validación de sesión activa.
-        </li>
-        <li>
-          🌐 Manejo de CORS y control de origen entre capas para asegurar la comunicación entre dominios distintos (localhost, Fly.io, Vercel).
-           <li>🛠️ Herramientas de desarrollo: IntelliJ IDEA, VSCode, Postman, GitHub.</li>
-        </li>
-      </ul>
-    </>
-  ),
+      <>
+        <p>
+          Aplicación web fullstack para gestión de tareas con enfoque
+          profesional en arquitectura desacoplada, seguridad, escalabilidad y
+          despliegue moderno. Desarrollada como parte de un portafolio técnico
+          para demostrar habilidades completas en desarrollo backend, frontend y
+          DevOps.
+        </p>
+        <p>
+          El backend fue construido con Java 17 y Spring Boot 3.5, exponiendo
+          una API REST segura con control total de usuarios y tareas. El
+          frontend fue desarrollado en React con Vite, brindando una experiencia
+          limpia, responsive y moderna. Ambos componentes se comunican mediante
+          peticiones HTTP autenticadas con JWT.
+        </p>
+        <p>
+          Para probar la interfaz puedes crear un usuario nuevo o usar uno
+          generico user:p@gmail.com password: P123456
+        </p>
+        <ul style={{ listStyle: "none" }}>
+          <li>
+            🔐 Sistema de autenticación robusto con JSON Web Tokens (JWT) que
+            protege todas las rutas sensibles y controla el acceso a nivel de
+            usuario.
+          </li>
+          <li>
+            🔁 Funcionalidad de recuperación de contraseña y actualización de
+            datos personales.
+          </li>
+          <li>
+            🔒 Encriptación segura de contraseñas usando BCrypt antes de
+            almacenarlas en la base de datos PostgreSQL.
+          </li>
+          <li>
+            🔄 Operaciones CRUD completas para usuarios y tareas: registrar,
+            iniciar sesión, crear, listar, actualizar y eliminar tareas
+            personales.
+          </li>
+          <li>
+            🧩 Arquitectura desacoplada: frontend y backend separados en
+            distintos repositorios y desplegados de forma independiente.
+          </li>
+          <li>
+            🖥️ Interfaz de usuario moderna hecha con React, utilizando
+            `useState`, `useEffect` y `fetch` para interacción dinámica con el
+            backend.
+          </li>
+          <li>
+            📱 Diseño responsive con Material UI adaptado a dispositivos
+            móviles.
+          </li>
+          <li>
+            🐘 Persistencia de datos con PostgreSQL, con configuración de
+            conexión desde Spring Boot mediante archivo
+            `application.properties`.
+          </li>
+          <li>
+            🐳 Contenerización profesional usando Docker para backend y base de
+            datos, incluyendo archivos `Dockerfile` y `docker-compose.yml`.
+          </li>
+          <li>
+            ☁️ Despliegue de backend en Fly.io usando imagen multistage
+            optimizada con Maven y Java, y frontend en Vercel mediante GitHub
+            integration.
+          </li>
+          <li>
+            🔁 Flujo de autenticación gestionado en frontend con manejo de
+            tokens JWT, almacenamiento en `localStorage` y validación de sesión
+            activa.
+          </li>
+          <li>
+            🌐 Manejo de CORS y control de origen entre capas para asegurar la
+            comunicación entre dominios distintos (localhost, Fly.io, Vercel).
+            <li>
+              🛠️ Herramientas de desarrollo: IntelliJ IDEA, VSCode, Postman,
+              GitHub.
+            </li>
+          </li>
+        </ul>
+      </>
+    ),
     imagen: Blah,
     tecnologias: [
-    "React",
-    "Vite",
-    "Material UI",
-    "Java 17",
-    "Spring Boot 3.5",
-    "PostgreSQL",
-    "JWT",
-    "BCrypt",
-    "API REST",
-    "Docker",
-    "Docker Compose",
-    "Fly.io",
-    "Vercel",
-    "IntelliJ IDEA",
-    "VSCode",
-    "Postman",
-    "Javascript",
-    "Maven"
-  ],
+      "React",
+      "Vite",
+      "Material UI",
+      "Java 17",
+      "Spring Boot 3.5",
+      "PostgreSQL",
+      "JWT",
+      "BCrypt",
+      "API REST",
+      "Docker",
+      "Docker Compose",
+      "Fly.io",
+      "Vercel",
+      "IntelliJ IDEA",
+      "VSCode",
+      "Postman",
+      "Javascript",
+      "Maven",
+    ],
     repo: {
       frontend: "https://github.com/Paoox/To-do-FrontEnd.git",
       backend: "https://github.com/Paoox/To-Do.git",
@@ -280,31 +315,38 @@ const proyectos = [
 function Projects() {
   const [proyectoActivo, setProyectoActivo] = useState(null);
   useEffect(() => {
-  const tooltip = document.getElementById('tooltip');
-  const cards = document.querySelectorAll('.card-proyecto');
+    const tooltip = document.getElementById("tooltip");
+    const cards = document.querySelectorAll(".card-proyecto");
 
-  const showTooltip = (e) => {
-    tooltip.style.top = `${e.clientY + 12}px`;
-    tooltip.style.left = `${e.clientX + 12}px`;
-    tooltip.style.opacity = '1';
-  };
+    const showTooltip = (e) => {
+      if (window.innerWidth > 768) {
+        tooltip.style.top = `${e.clientY + 12}px`;
+        tooltip.style.left = `${e.clientX + 12}px`;
+      }
+      tooltip.style.opacity = "1";
+    };
 
-  const hideTooltip = () => {
-    tooltip.style.opacity = '0';
-  };
+    const hideTooltip = () => {
+      tooltip.style.opacity = "0";
+    };
 
-  cards.forEach((card) => {
-    card.addEventListener('mousemove', showTooltip);
-    card.addEventListener('mouseleave', hideTooltip);
-  });
-
-  return () => {
     cards.forEach((card) => {
-      card.removeEventListener('mousemove', showTooltip);
-      card.removeEventListener('mouseleave', hideTooltip);
+      card.addEventListener("mousemove", showTooltip); // Desktop
+      card.addEventListener("mouseleave", hideTooltip); // Desktop
+
+      card.addEventListener("touchstart", showTooltip); // Mobile
+      card.addEventListener("touchend", hideTooltip); // Mobile
     });
-  };
-}, []);
+
+    return () => {
+      cards.forEach((card) => {
+        card.removeEventListener("mousemove", showTooltip);
+        card.removeEventListener("mouseleave", hideTooltip);
+        card.removeEventListener("touchstart", showTooltip);
+        card.removeEventListener("touchend", hideTooltip);
+      });
+    };
+  }, []);
 
   return (
     <section id="container-major">
@@ -342,7 +384,9 @@ function Projects() {
             ))}
           </Swiper>
 
-          <div id="tooltip" className="tooltip-hover">Conoce más →</div>
+          <div id="tooltip" className="tooltip-hover">
+            Conoce más →
+          </div>
 
           {proyectoActivo && (
             <ModalProyecto

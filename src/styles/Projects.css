@@ -177,7 +177,15 @@
   .swiper-button-next {
     right: -5px; /* antes: 8px */
   }
+
+  .tooltip-hover {
+    top: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    pointer-events: none;
+  }
 }
+
 
 @media (max-width: 480px) {
   .titulo-proyectos {
