@@ -27,6 +27,9 @@ const imagenes = [
   "/assets/certificados/cert23.jpg",
   "/assets/certificados/cert24.jpg",
   "/assets/certificados/cert25.jpg",
+  "/assets/certificados/cert26.pdf",
+  "/assets/certificados/cert27.pdf",
+  "/assets/certificados/cert28.pdf",
 ];
 
 export default function CarruselCertificados() {
