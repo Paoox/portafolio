@@ -1,37 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useTheme } from '../pages/ThemeContext';
 import '../styles/ThemeToggle.css';
 
-
 function ThemeToggle() {
-  const [modoOscuro, setModoOscuro] = useState(() => {
-    return localStorage.getItem('theme') === 'dark';
-  });
-
-  useEffect(() => {
-    const root = document.documentElement;
-    if (modoOscuro) {
-      root.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      root.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [modoOscuro]);
+  const { modoOscuro, setModoOscuro } = useTheme();
 
   const toggleTheme = () => {
-  setModoOscuro(prev => {
-    const nuevoModo = !prev;
-    // Esperamos a que React aplique el cambio y recargamos
-    setTimeout(() => {
-      window.location.reload();
-    }, 20); // leve retraso para que localStorage y context se actualicen
-    return nuevoModo;
-  });
-};
-
+    setModoOscuro(prev => !prev);
+  };
 
   return (
-     <button className="theme-toggle" onClick={toggleTheme}>
+    <button className="theme-toggle" onClick={toggleTheme}>
       <img
         src={modoOscuro ? '/sun.svg' : '/Moon.svg'}
         alt={modoOscuro ? 'Sol' : 'Luna'}
