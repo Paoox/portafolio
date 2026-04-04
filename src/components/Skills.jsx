@@ -8,7 +8,12 @@ function Skills() {
           <ul id="skills-list">
             <li>JavaScript</li>
             <li>React</li>
+            <li>React Native</li>
             <li>Java + Spring Boot</li>
+            <li>Python</li>
+            <li>Pytorch</li>
+            <li>Selenium</li>
+            <li>Playwrite</li>
             <li>HTML</li>
             <li>Sass</li>
             <li>Emmet</li>
@@ -20,9 +25,11 @@ function Skills() {
             <li>Bootsrap</li>
             <li>Tailwind</li>
             <li>PostgreSQL</li>
+            <li>AirTable</li>
             <li>MongoDB</li>
             <li>Docker</li>
             <li>n8n</li>
+            <li>Make</li>
             <li>Ngrok</li>
             <li>Railway</li>
             <li>Vercel</li>
@@ -39,9 +46,11 @@ function Skills() {
             <li>Canva</li>
             <li>VSC</li>
             <li>Intellij IDEA</li>
+            <li>Thony</li>
             <li>Postman</li>
             <li>Insomnia</li>
             <li>Copilot</li>
+            
           </ul>
         </section>
   );

@@ -2,8 +2,14 @@ import React from "react";
 import "../styles/SliderTechIcons.css";
 
 import { FaAws } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
+import { FaJava, FaPython } from "react-icons/fa";
+import { GoCopilot } from "react-icons/go";
 import { SiMui } from "react-icons/si";
+import { TbBrandReactNative, TbSdk } from "react-icons/tb";
+import { AiOutlineOpenAI } from "react-icons/ai";
+import { IoLogoIonic, IoTerminal } from "react-icons/io";
+import { RiGeminiFill } from "react-icons/ri";
+import { BsClaude } from "react-icons/bs";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import {
   SiJavascript,
@@ -31,12 +37,18 @@ import {
   SiPostman,
   SiGit,
   SiInsomnia,
+  SiPytorch,
+  SiSelenium,
+  SiIntellijidea,
+  SiTensorflow,
+  SiOpencv
 } from "react-icons/si";
 
 export default function SliderTechIcons() {
   const icons = [
     <SiJavascript color="#f7df1e" />,
     <SiReact color="#61dafb" />,
+    <TbBrandReactNative color="#371ce5" />,
     <SiSpring color="#6DB33F" />,
     <SiNodedotjs color="#339933" />,
     <SiPostgresql color="#336791" />,
@@ -64,6 +76,19 @@ export default function SliderTechIcons() {
     <FaJava color="#7b7b7fff" />,
     <SiMui color="#cdcdcfff" />,
     <SiInsomnia color="#5849BE" />,
+    <FaPython color="#FFFF00" />,
+    <SiPytorch color="#f79b07" />,
+    <SiSelenium color="#90f44e" />,
+    <SiIntellijidea color="#fe3d77" />,
+    <SiTensorflow color="#dab13e" />,
+    <GoCopilot color="#d073f6" />,
+    <AiOutlineOpenAI color="#046c86" />,
+    <SiOpencv color="#fb224a" />,
+    <IoLogoIonic color="#26a5ef" />,
+    <TbSdk color="#7005ce" />,
+    <RiGeminiFill color="#09c4a4" />,
+    <BsClaude color="#D27354" />,
+    <IoTerminal color="#6a1bae" />,
   ];
 
   return (
