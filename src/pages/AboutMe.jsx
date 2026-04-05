@@ -50,7 +50,7 @@ function AboutMe() {
           <p id="description-me">
             Soy una apasionada del desarrollo web y de la programación.
             <br />
-            Realice un cambio radical en mi carrera profesional en la cual tengo mas de 20 años de experiencia en diferentes areas como ventas, atención a clientes, promotoria, etc.<br />
+            Realice un cambio radical en mi carrera profesional en la cual tengo mas de 20 años de experiencia<br /> en diferentes areas como ventas, atención a clientes, promotoria, etc.<br />
             Cuento con apmplia experiencia en manejo de personal como Supervisora, Coordinadora y Gerente. <br />
             Descubri hace unos 5 años atras que me gustaba el tema de la
             programación, <br />
