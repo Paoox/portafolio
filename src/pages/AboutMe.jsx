@@ -51,7 +51,7 @@ function AboutMe() {
             Soy una apasionada del desarrollo web y de la programación.
             <br />
             Realice un cambio radical en mi carrera profesional en la cual obtuve mas de 20 años de experiencia<br /> en diferentes areas como ventas, atención a clientes, promotoria, etc.<br />
-            Cuento con apmplia experiencia en manejo de personal como Supervisora, Coordinadora y Gerente. <br />
+            Cuento con amplia experiencia en manejo de personal como Supervisora, Coordinadora y Gerente. <br />
             Descubri hace unos 5 años atras que me gustaba el tema de la
             programación, <br />
             desde entonces he estado aprendiendo y creciendo en este campo.
