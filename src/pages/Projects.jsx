@@ -86,7 +86,7 @@ const proyectos = [
         </ul>
       </>
     ),
-    imagen: <Bot></Bot>,
+    imagen: Bot,
     tecnologias: [
       "Python 3.13",
       "Telegram Bot API",
