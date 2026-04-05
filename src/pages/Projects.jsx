@@ -12,11 +12,115 @@ import Exsemed from "../assets/exsemed.jpg";
 import Colabora from "../assets/colabora.jpg";
 import Encriptador from "../assets/encriptador.png";
 import Blah from "../assets/blah.png";
+import Bot from "../assets/Severian.png";
 import { useEffect } from "react";
 
 const proyectos = [
   {
     id: 1,
+    titulo: "Automatización Activades Admin",
+    descripcion: (
+      <>
+        <p>
+          Este proyecto es un flujo de automatización para apoyar al área de coordinación de una empresa privada la cual por contrato no puedo mencionar, ni mostrar el repositorio ya que contiene información privada y sensible. <br />
+        </p>
+        <p>
+          Con este proyecto se busco eficientar el tiempo de los coordinadores, los cuales tenian asignadas labores administrativas como:
+          <ul>Subir asistencias diarias de los promotores de manera manual</ul>
+          <ul>Llevar un control de los pagos que tendra cada promotor dependiendo de su actividad quincenal y el tipo de actividad realizada</ul>
+          <ul>Realizar solicitudes de gasolina y reembolsos en List para su dispersión </ul>
+          <ul>Realizar el monitoreo y rastreo de guías de paquetería para la entrega del material correspondiente a nivel nacional</ul>
+          <ul>Llevar acabo el monitoreo y revisión de la actividad de los promotores</ul>
+          <ul>Revisión de formularios respondidos por los promotores para mitigar errores</ul>
+          <ul>Actualización diaria del avance de actividades de cada promotor en excel por medio de graficas comparativas y tablas dinamicas</ul> <br />
+          Y logramos una reducción de tiempo del 85% en estas actividades a las que los coordinadores les invertian cerca de 5hrs diarias lo redujimos a 45 mins al día. <br />
+          Sin mencionar que los errores que antes les costaban de 2 a 5 días detectar ahora los detecta el mismo día a los pocos minutos de haberlos cometido el promotor, esto ayuda a mejorar el ingreso de la empresa al evitar descuentos por actividades con errores y tambien ahorra tiempo de traslados y gasolina al ya no tener que regresar en un futuro a realizar dichas correcciones.
+        </p>
+        <p>Es un sistema de automatización operativa construido en Python 3.13
+        sobre un servidor local Debian, controlado completamente desde Telegram. Automatiza la supervisión de un equipo de 35 promotores de campo: valida formularios en tiempo real, clasifica fotos de exhibidores con visión computacional, lee remisiones con
+        OCR y registra asistencias de forma autónoma</p>
+        <ul style={{ listStyle: "none" }}>
+          <li>
+          🤖 Dos bots independientes de Telegram como interfaz
+          de control total del servidor, con ConversationHandlers para flujos multi-paso y hash MD5 de 8 caracteres para callbacks inline respetando el límite de 64 bytes de Telegram.
+          </li>
+          <li>
+          🌐 Automatización web con doble motor de navegador: Selenium 4.41 con Firefox y geckodriver 0.36.0 para captura de asistencias y carga de PDFs en nómina, y Playwright 1.48 con Chromium vía CDP en puertos diferentes para monitoreo e inspección del DOM Angular en tiempo real.
+          </li>
+          <li>
+          ✅ Sistema de validaciones en capas (7 en total) para visitas a tiendas: confirma que la visita se realizó, que recibieron las tarjetas, que se permitió contar el inventario, valida RP principal y secundario contra número de tienda, lee la remisión con OCR, detecta productos en ticket y clasifica los diferentes exhibidores con visión computacional.
+          </li>
+          <li>
+          🏪 Validación de formularios para cadenas comerciales con reglas específicas por tipo de comercio y cotejo de campos obligatorios en cada visita.
+          </li>
+          <li>
+          🧠 Clasificador de exhibidores entrenado sobre embeddings de OpenAI CLIP ViT-B/32 con PyTorch CPU-only, scikit-learn LogisticRegression y data augmentation. Reentrenamiento automático cada viernes con backup del modelo anterior. El coordinador confirma o corrige clasificaciones desde Telegram con botones inline, y las fotos corregidas se incorporan al dataset de entrenamiento automáticamente para mejorar la calidad de la clasificación.
+          </li>
+          <li>
+          🔍 Lectura de remisiones con EasyOCR 1.7.2 y OpenCV headless con 3 estrategias de fallback, detección de productos en ticket para validación cruzada y resolución de URLs cacheadas por Angular entre eventos del mismo promotor.
+          </li>
+          <li>
+          📋 Gestión de correcciones pendientes con persistencia en JSON y ciclo de vida completo por error: registrado → pendiente → corregido, con reporte agrupado por promotor y cálculo de días sin resolver vía Telegram.
+          </li>
+          <li>
+          📊 Reportes automáticos de avance del equipo con conteo acumulado de visitas según el comercio, lista de promotores activos en campo y ciclo de monitoreo adaptativo: 15 minutos con actividad, 60 minutos sin ella.
+          </li>
+          <li>
+          📦 Integración con Teams y documentos de Excel compartidos para consulta de guías FedEx de promotores con validación de estatus en la página de rastreo, actualización de avance en tabla y extracción de datos del equipo.
+          </li>
+          <li>
+          💬 Bot conectado a WhatsApp de trabajo que lee mensajes entrantes y responde automáticamente a promotores con planogramas, encuestas específicas por tipo de comercio y FAQs del equipo.
+          </li>
+          <li>
+          ⛽ Extracción automática de información de chats para generar solicitudes de gasolina con detalle de kilómetros recorridos, capturas de evidencia y gestión de solicitudes de reembolso en Microsoft Lists.
+          </li>
+          <li>
+          📄 Generación automática mensual de cartas responsivas de material con fpdf2, y automatización de nómina de promotores con cálculo por tienda visitada.
+            <li>
+            🖥️ Infraestructura self-hosted con 4 servicios systemd independientes, Xvfb como display virtual X11, encendido programado vía RTC wake y suspensión desactivada desde logind.conf para operación con tapa cerrada.
+            </li>
+            <li>
+            🔄 Flujo de despliegue con GitHub como fuente de verdad: git reset --hard origin/main seguido de restart de servicios systemd, sin contenedores ni entornos virtuales, instalación directa con pip3 --break-system-packages.
+            </li>
+          </li>
+        </ul>
+      </>
+    ),
+    imagen: <Bot></Bot>,
+    tecnologias: [
+      "Python 3.13",
+      "Telegram Bot API",
+      "python-telegram-bot 21.6",
+      "Selenium 4.41",
+      "Playwright 1.48",
+      "Firefox + geckodriver",
+      "Chromium CDP",
+      "OpenAI CLIP ViT-B/32",
+      "PyTorch CPU",
+      "EasyOCR",
+      "scikit-learn",
+      "OpenCV",
+      "Pillow",
+      "fpdf2",
+      "WhatsApp API",
+      "Microsoft Teams",
+      "Microsoft Lists",
+      "Excel automation",
+      "FedEx tracking",
+      "systemd",
+      "Xvfb",
+      "Debian",
+      "GitHub",
+    ],
+    repo: {
+      frontend: "https://github.com/Paoox/To-do-FrontEnd.git",
+      backend: "https://github.com/Paoox/To-Do.git",
+    },
+
+    demo: "https://to-do-front-end-fawn.vercel.app/#/",
+  },
+  {
+    id: 2,
     titulo: "Red Social Blah (Fullstack)",
     descripcion: (
       <>
@@ -129,7 +233,7 @@ const proyectos = [
     demo: "https://to-do-front-end-fawn.vercel.app/#/",
   },
   {
-    id: 2,
+    id: 3,
     titulo: "Exsemed (Fullstack)",
     descripcion: (
       <>
@@ -190,7 +294,7 @@ const proyectos = [
     demo: "https://exsemed.mx/",
   },
   {
-    id: 3,
+    id: 4,
     titulo: "Colabora.mx (Frontend)",
     descripcion: (
       <>
@@ -251,7 +355,7 @@ const proyectos = [
     demo: "https://colabora.mx/",
   },
   {
-    id: 4,
+    id: 5,
     titulo: "Encriptador (Frontend)",
     descripcion: (
       <>
