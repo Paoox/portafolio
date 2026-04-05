@@ -7,7 +7,7 @@ import { GoCopilot } from "react-icons/go";
 import { SiMui } from "react-icons/si";
 import { TbBrandReactNative, TbSdk } from "react-icons/tb";
 import { AiOutlineOpenAI } from "react-icons/ai";
-import { IoLogoIonic, IoTerminal } from "react-icons/io";
+import { IoLogoIonic} from "react-icons/io";
 import { RiGeminiFill } from "react-icons/ri";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import {
@@ -41,7 +41,8 @@ import {
   SiIntellijidea,
   SiTensorflow,
   SiOpencv,
-  SiClaude
+  SiClaude,
+  SiGnometerminal
 } from "react-icons/si";
 
 export default function SliderTechIcons() {
@@ -88,7 +89,7 @@ export default function SliderTechIcons() {
     <TbSdk color="#7005ce" />,
     <RiGeminiFill color="#09c4a4" />,
     <SiClaude color="#D27354" />,
-    <IoTerminal color="#6a1bae" />,
+    <SiGnometerminal color="#6a1bae" />,
   ];
 
   return (
