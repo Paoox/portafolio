@@ -184,6 +184,12 @@
     transform: translateX(-50%) !important;
     pointer-events: none;
   }
+
+  /* oculta las flechas en móvil, se navega con swipe */
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
 }
 
 
