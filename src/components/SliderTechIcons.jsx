@@ -9,7 +9,6 @@ import { TbBrandReactNative, TbSdk } from "react-icons/tb";
 import { AiOutlineOpenAI } from "react-icons/ai";
 import { IoLogoIonic, IoTerminal } from "react-icons/io";
 import { RiGeminiFill } from "react-icons/ri";
-import { BsClaude } from "react-icons/bs";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import {
   SiJavascript,
@@ -41,7 +40,8 @@ import {
   SiSelenium,
   SiIntellijidea,
   SiTensorflow,
-  SiOpencv
+  SiOpencv,
+  SiClaude
 } from "react-icons/si";
 
 export default function SliderTechIcons() {
@@ -87,7 +87,7 @@ export default function SliderTechIcons() {
     <IoLogoIonic color="#26a5ef" />,
     <TbSdk color="#7005ce" />,
     <RiGeminiFill color="#09c4a4" />,
-    <BsClaude color="#D27354" />,
+    <SiClaude color="#D27354" />,
     <IoTerminal color="#6a1bae" />,
   ];
 
