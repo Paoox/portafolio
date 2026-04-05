@@ -77,7 +77,7 @@ export default function SliderTechIcons() {
     <FaJava color="#7b7b7fff" />,
     <SiMui color="#cdcdcfff" />,
     <SiInsomnia color="#5849BE" />,
-    <FaPython color="#FFFF00" />,
+    <FaPython color="#c4c42c" />,
     <SiPytorch color="#f79b07" />,
     <SiSelenium color="#90f44e" />,
     <SiIntellijidea color="#fe3d77" />,

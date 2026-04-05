@@ -211,3 +211,30 @@
     align-items: center;
   }
 }
+
+/* Resetear estilos dentro de la card para que no afecten el navbar */
+.card-proyecto .modal-descripcion p,
+.card-proyecto .modal-descripcion ul,
+.card-proyecto .modal-descripcion li,
+.card-proyecto .modal-descripcion strong {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.card-proyecto .modal-descripcion ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+  margin: 0.4rem 0;
+}
+
+.card-proyecto .modal-descripcion li {
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+.card-proyecto .modal-descripcion strong {
+  font-weight: 600;
+  color: #83c0c1;
+  font-size: 0.9rem;
+}

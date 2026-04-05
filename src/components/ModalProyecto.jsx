@@ -14,7 +14,7 @@ export default function ModalProyecto({ proyecto, onClose }) {
           className="modal-img"
         />
         <h2>{proyecto.titulo}</h2>
-        <div className="modal-descripcion">{proyecto.descripcion}</div>
+        <div className="modal-descripcion">{proyecto.descripcionCompleta || proyecto.descripcion}</div>
 
         <div className="modal-tecnologias">
           {proyecto.tecnologias.map((tech, i) => (

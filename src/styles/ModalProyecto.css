@@ -26,6 +26,7 @@
   transform: translateX(150px);
   max-height: 90vh;
   overflow-y: auto;
+  isolation: isolate;
 }
 
 .modal-img {
@@ -98,4 +99,40 @@
     font-size: 0.9rem;
     margin: 6px;
   }
+}
+
+/* Reset para evitar que los estilos del modal afecten el resto de la app */
+.modal-descripcion {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  all: revert; /* ← resetea herencia */
+  color: var(--text-color);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.modal-descripcion p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.modal-descripcion ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+  list-style: disc;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.modal-descripcion li {
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: left;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.modal-descripcion strong {
+  font-weight: 600;
+  color: #83c0c1;
 }

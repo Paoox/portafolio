@@ -87,11 +87,12 @@ function AboutMe() {
               Certificación en Aws y OCI (Oracle Cloud Infrastructure) - 2025
             </li>
             <li>Diplomado en UI/UX - 2025</li>
-            <li>Estudiante Ing.Desarrollo de Software en Hybridge Education 2025 - 2028</li>
-            <li>Estudiante Ing.En IA 2025 - 2028</li>
             <li>Taller de actualización de manejo de Git y Github - 2026</li>
             <li>Diplomado integraciones con n8n - 2026</li>
             <li>Taller de Innovación con Inteligencia Artificial - 2026</li>
+            <br />
+            <li>Estudiante de la Ingeniería en Desarrollo de Software 2025 - en curso </li>
+            <li>Estudiante de la Ingenieria en IA 2025 - en curso</li>
           </ul>
         </section>
 
