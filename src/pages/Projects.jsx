@@ -13,11 +13,59 @@ import Colabora from "../assets/colabora.jpg";
 import Encriptador from "../assets/encriptador.png";
 import Blah from "../assets/blah.png";
 import Bot from "../assets/Severian.png";
+import Feria from "../assets/ferIA.png";
 import { useEffect } from "react";
 
 const proyectos = [
   {
     id: 1,
+    titulo: "FerIA",
+    descripcion: (
+      <>
+        <p>
+          Plataforma B2B2C de <strong>acompañamiento financiero con IA</strong>,
+          desarrollada en el <strong>hackathon de genius arena de Talent-Land 2026</strong> con enfoque en el ODS 8. Un proyecto
+          especial por la escala técnica y el impacto que busca generar.
+        </p>
+        <p>
+          Construida con <strong>Ionic React + TypeScript</strong> en el frontend
+          y un backend serverless completo en <strong>AWS (CDK, Lambda, Bedrock)</strong>.
+        </p>
+      </>
+    ),
+    descripcionCompleta: (
+      <>
+        <p>
+          FerIA permite registrar ingresos y gastos por texto o voz, conversar con
+          un tutor financiero impulsado por IA y desbloquear logros que refuerzan
+          hábitos financieros saludables.
+        </p>
+        <p><strong>Funcionalidades:</strong></p>
+        <ul>
+          <li>🎙️ <strong>Registro por voz:</strong> pipeline event-driven con Amazon Transcribe + Bedrock que transcribe, clasifica y persiste movimientos automáticamente.</li>
+          <li>🤖 <strong>Tutor con IA:</strong> chat conversacional con Claude (Amazon Bedrock) que responde con contexto real de tus finanzas.</li>
+          <li>🏆 <strong>Motor de logros:</strong> gamificación con reglas auditables bajo dos ejes — Claridad y Control del mes.</li>
+          <li>📊 <strong>Dashboard financiero:</strong> resumen de ingresos, gastos, balance y tendencias semanales.</li>
+          <li>🔐 <strong>Autenticación OAuth:</strong> email/password y Google con Amazon Cognito.</li>
+          <li>📱 <strong>Web + móvil:</strong> una sola base de código con Ionic + Capacitor.</li>
+          <li>☁️ <strong>Infraestructura como código:</strong> todo el backend definido y desplegable con AWS CDK v2.</li>
+        </ul>
+      </>
+    ),
+    imagen: Feria, // <- actualiza con tu imagen/screenshot
+    tecnologias: [
+      "Ionic React", "TypeScript", "AWS Lambda", "AWS CDK v2",
+      "Amazon Bedrock", "DynamoDB", "Amazon Cognito", "API Gateway",
+      "Amazon Transcribe", "Capacitor", "Vite", "GitHub Actions",
+    ],
+    repo: {
+      frontend: "https://github.com/Paoox/feria-portafolio/tree/develop",
+      backend: "https://github.com/jesus1612/feria-infraestructure",
+    },
+    demo: "https://d3sksrbscbaj6x.cloudfront.net/login", 
+  },
+  {
+    id: 2,
     titulo: "Automatización Actividades Admin",
     descripcion: (
       <>
@@ -78,7 +126,7 @@ const proyectos = [
     privado: true,
   },
   {
-    id: 2,
+    id: 3,
     titulo: "Red Social Blah (Fullstack)",
     descripcion: (
       <>
@@ -128,7 +176,7 @@ const proyectos = [
     demo: "https://to-do-front-end-fawn.vercel.app/#/",
   },
   {
-    id: 3,
+    id: 4,
     titulo: "Exsemed (Fullstack)",
     descripcion: (
       <>
@@ -171,7 +219,7 @@ const proyectos = [
     demo: "https://exsemed.mx/",
   },
   {
-    id: 4,
+    id: 5,
     titulo: "Colabora.mx (Frontend)",
     descripcion: (
       <>
@@ -213,7 +261,7 @@ const proyectos = [
     demo: "https://colabora.mx/",
   },
   {
-    id: 5,
+    id: 6,
     titulo: "Encriptador (Frontend)",
     descripcion: (
       <>
