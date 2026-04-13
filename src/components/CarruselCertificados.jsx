@@ -30,6 +30,7 @@ const imagenes = [
   "/assets/certificados/cert26.jpg",
   "/assets/certificados/cert27.jpg",
   "/assets/certificados/cert28.jpg",
+  "/assets/certificados/cert29.jpg",
 ];
 
 export default function CarruselCertificados() {
@@ -38,7 +39,7 @@ export default function CarruselCertificados() {
   useEffect(() => {
     const intervalo = setInterval(() => {
       setIndiceActual((prev) => (prev + 1) % imagenes.length);
-    }, 5000); // cambia cada 3 segundos
+    }, 6000); // cambia cada 3 segundos
 
     return () => clearInterval(intervalo);
   }, []);
