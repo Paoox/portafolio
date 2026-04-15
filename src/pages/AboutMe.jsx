@@ -63,7 +63,7 @@ function AboutMe() {
             Me considero una persona perseverante y dedicada, siempre dispuesta
             a dar lo mejor de mi.
             <br />
-            Busco siempre perfeccionar los detalles minimos de cada proyecto y llevarlos a otro nivel.
+            Busco siempre perfeccionar los detalles minimos de cada proyecto.
           </p>
         </section>
 
